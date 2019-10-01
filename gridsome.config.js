@@ -8,6 +8,24 @@ module.exports = {
   siteName: 'Gridsome',
   plugins: [
         {
+          use: '@gridsome/source-filesystem',
+          options: {
+            path: 'pages/**/*.md',
+            typeName: 'Page',
+            remark: {
+              plugins: [
+                // ...local plugins
+              ]
+            }
+          }
+        },
+        {
+          use: `gridsome-plugin-netlify-cms`,
+          options: {
+            publicPath: `/admin`
+          }
+        },
+        {
           use: 'gridsome-plugin-tailwindcss',
           options: {
           tailwindConfig: './tailwind.config.js',
