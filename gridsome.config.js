@@ -10,8 +10,8 @@ module.exports = {
         {
           use: '@gridsome/source-filesystem',
           options: {
-            path: 'pages/**/*.md',
-            typeName: 'Page',
+            path: 'posts/**/*.md',
+            typeName: 'Post',
             remark: {
               plugins: [
                 // ...local plugins
