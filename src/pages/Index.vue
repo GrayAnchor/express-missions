@@ -1,10 +1,18 @@
 <template>
   <Layout>
+    <!-- Hero -->
+    <section class="px-4">
+      <div class="max-w-large mx-auto">
+        <div class="max-w-medium">
+          <h1>We want these girls to be free...<span>and to live the life they were created for.</span></h1>
+        </div>
+      </div>
 
+    </section>
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
+    <g-image alt="Example image" :src="$page.post.thumbnail" width="400" />
 
-    <h1>Hello, world!</h1>
+    <h1>{{ $page.post.title }}</h1>
 
     <p>
       Test dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
@@ -17,6 +25,17 @@
 
   </Layout>
 </template>
+
+<page-query>
+query post {
+  post(id:"Home") {
+        id
+        title
+        thumbnail
+    }
+  }
+</page-query>
+
 
 <script>
 export default {

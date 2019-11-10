@@ -1,0 +1,37 @@
+Hero Title - String
+Hero subtitle - String
+Hero Image - Image
+
+Our Mission Title - String
+Our Mission Overview - Text
+Our Mission Image - Image
+
+Our Work Title - String
+Our Work Overview - Text
+Our Work Image - Image
+
+The Need Title - String
+
+*Repeatable Rows Field*
+The Need Subtitle - String
+The Need Row Text - Rich Text
+The Need Row Image - Image
+
+*Repeatable Field*
+Quote Text - Text
+Quote Attribution - Text
+
+Donate Title - String
+Donate Subtitle - String
+Donate Overview Text - Text
+Donate Monthly Gift Button Link - Text/Link
+Donate One Time Gift Button Link - Text/Link
+Donat Background Image - Image
+
+Contact Us Title - String
+Contact Us Overview - Text
+Contact Form - TBD
+
+Social Media Links - Links
+
+

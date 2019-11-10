@@ -1,15 +1,14 @@
 <template>
-  <div class="layout">
-    <header class="header max-w-large bg-blue-100">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link text-4xl text-red-500" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+  <div class="w-full">
+    <header class="header bg-green-100 w-full px-4">
+      <nav class="block w-full h-32 flex items-center mx-auto max-w-large">
+          <a class="block h-12" href="/"><img class="h-full block object-contain" src="/images/logo.png"></a>
       </nav>
     </header>
     <slot/>
+    <footer class="w-full bg-blue-100 h-32">
+      This is the footer
+    </footer>
   </div>
 </template>
 
@@ -29,12 +28,7 @@ body {
   line-height: 1.5;
 }
 
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+
 
 .header {
   display: flex;
