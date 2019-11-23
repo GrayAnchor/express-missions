@@ -1,9 +1,27 @@
 ---
-layout:
+id: Home
 title: Hello
-id: "Home"
 date: 2019-10-01T00:56:34.007Z
-thumbnail: /images/uploads/ac.jpg
-rating: 5
+heroImage: /images/uploads/269346_151839781635782_2048521217_n.jpg
+heroTitle: Hero Title
+heroSubtitle: Hero Subtitle
+ourMissionTitle: Our Mission Title
+ourMissionOverview: Our mission overview our mission overview. Our mission overview.
+ourWorkTitle: Our Work Title
+ourWorkOverview: 'Our work overview, our work overview our work overview. Our work overview.'
+theNeedTitle: The Need Section Title
+theNeedSubtitle: The Need Section Subtitle
+donateTitle: Donate Section Title
+donateSubtitle: Donate Section Subtitle
+donateText: Donate section text donate section text.
+donatePrimaryButton:
+  buttonText: Primary Button
+  buttonUrl: 'https://google.com'
+donateSecondaryButton:
+  buttonText: Secondary Button
+  buttonUrl: 'https://google.com'
+donateImage: /images/uploads/adobestock_52188134.jpeg
+contactUsTitle: Contact Us Title
+contactUsText: Contact us text contact us text text contact us us text.
 ---
-Checkity check.
+
