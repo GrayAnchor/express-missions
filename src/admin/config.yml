@@ -55,13 +55,13 @@ collections:
         widget: "object"
         fields:
           - {label: "Button Text", name: buttonText, widget: "string"}
-          - {label: "Text", name: text1, widget: "text"}
+          - {label: "URL", name: buttonUrl, widget: "string"}
       - label: "Donate Secondary Button"
         name: "donateSecondaryButton"
         widget: "object"
         fields:
           - {label: "Button Text", name: buttonText, widget: "string"}
-          - {label: "Text", name: text1, widget: "text"}
+          - {label: "URL", name: buttonUrl, widget: "string"}
       - {label: "Donate Background Image", name: "donateImage", widget: "image"}
       - {label: "Contact Us Title", name: "contactUsTitle", widget: "string"}
       - {label: "Contact Us Text", name: "contactUsText", widget: "text"}
