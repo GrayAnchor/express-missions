@@ -23,5 +23,59 @@ collections:
       - {label: "Our Mission Overview", name: "ourMissionOverview", widget: "text"}
       - {label: "Our Work Title", name: "ourWorkTitle", widget: "string"}
       - {label: "Our Work Overview", name: "ourWorkOverview", widget: "text"}
+      - {label: "The Need Section Title", name: "theNeedTitle", widget: "string"}
+      - {label: "The Need Section Subtitle", name: "theNeedSubtitle", widget: "string"}
+      - label: "The Need Section Content"
+        name: "theNeedContent"
+        widget: "list"
+        fields:
+          - label: "Content Row"
+            name: theNeedRow
+            widget: object
+            fields:
+              - {label: "Image", name: image, widget: "image"}
+              - {label: "Text", name: text1, widget: "text"}
+              - {label: "Big Orange Statistics", name: orangeStats, widget: "string"}
+              - {label: "Text", name: text2, widget: "text"}
+      - label: "Testimonial Slider - Enter up to four testimonials"
+        name: "testimonialSlider"
+        widget: "list"
+        fields:
+          - label: "Testimonial"
+            name: testimonial
+            widget: object
+            fields:
+              - {label: "Quote", name: quote, widget: "text"}
+              - {label: "Attribution", name: attribution, widget: "text"}
+      - {label: "Donate Section Title", name: "donateTitle", widget: "string"}
+      - {label: "Donate Section Subtitle", name: "donateSubtitle", widget: "string"}
+      - {label: "Donate Section Text", name: "donateText", widget: "text"}
+      - label: "Donate Primary Button"
+        name: "donatePrimaryButton"
+        widget: "object"
+        fields:
+          - {label: "Button Text", name: buttonText, widget: "string"}
+          - {label: "Text", name: text1, widget: "text"}
+      - label: "Donate Secondary Button"
+        name: "donateSecondaryButton"
+        widget: "object"
+        fields:
+          - {label: "Button Text", name: buttonText, widget: "string"}
+          - {label: "Text", name: text1, widget: "text"}
+      - {label: "Donate Background Image", name: "donateImage", widget: "image"}
+      - {label: "Contact Us Title", name: "contactUsTitle", widget: "string"}
+      - {label: "Contact Us Text", name: "contactUsText", widget: "text"}
+
+
+        
+
+           
+       
+
+
+
+      
+              
+
 
 
