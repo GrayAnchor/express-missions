@@ -31,7 +31,25 @@ query post {
   post(id:"Home") {
         id
         title
-        thumbnail
+        heroImage
+        heroTitle
+        heroSubtitle
+        outMissionTitle
+        ourMissionOverview
+        ourWorkTitle
+        ourWorkOverview
+        theNeedTitle
+        theNeedSubtitle
+        theNeedContent
+        testimonialSlider
+        donateTitle
+        donateSubtitle
+        donateText
+        donatePrimaryButton
+        donateSecondaryButton
+        donateImage
+        contactUsTitle
+        contactUsText
     }
   }
 </page-query>
