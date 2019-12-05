@@ -11,6 +11,12 @@ ourWorkTitle: Our Work Title
 ourWorkOverview: 'Our work overview, our work overview our work overview. Our work overview.'
 theNeedTitle: The Need Section Title
 theNeedSubtitle: The Need Section Subtitle
+theNeedContent:
+  - theNeedRow:
+      image: /images/uploads/269346_151839781635782_2048521217_n.jpg
+      orangeStats: 89%
+      text1: Text field content
+      text2: Text content again
 donateTitle: Donate Section Title
 donateSubtitle: Donate Section Subtitle
 donateText: Donate section text donate section text.
