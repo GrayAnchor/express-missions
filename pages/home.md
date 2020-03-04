@@ -17,6 +17,10 @@ theNeedContent:
       orangeStats: 89%
       text1: Text field content
       text2: Text content again
+testimonialSlider:
+  - testimonial:
+      attribution: me
+      quote: quote
 donateTitle: Donate Section Title
 donateSubtitle: Donate Section Subtitle
 donateText: Donate section text donate section text.
