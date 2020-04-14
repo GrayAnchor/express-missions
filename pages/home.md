@@ -28,7 +28,7 @@ donateSecondaryButton:
   buttonUrl: 'https://google.com'
 donateImage: /images/uploads/adobestock_52188134.jpeg
 contactUsTitle: Contact Us Title
-contactUsText: Contact us text contact us text text contact us us text.
+contactUsText: Contact us text contact us text text contact us us texty wexty.
 testimonialSlider:
   - testimonial:
       attribution: me
