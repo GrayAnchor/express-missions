@@ -17,10 +17,6 @@ theNeedContent:
       orangeStats: 89%
       text1: Text field content
       text2: Text content again
-testimonialSlider:
-  - testimonial:
-      attribution: me
-      quote: quote
 donateTitle: Donate Section Title
 donateSubtitle: Donate Section Subtitle
 donateText: Donate section text donate section text.
@@ -33,5 +29,9 @@ donateSecondaryButton:
 donateImage: /images/uploads/adobestock_52188134.jpeg
 contactUsTitle: Contact Us Title
 contactUsText: Contact us text contact us text text contact us us text.
+testimonialSlider:
+  - testimonial:
+      attribution: me
+      quote: quotes
 ---
 
