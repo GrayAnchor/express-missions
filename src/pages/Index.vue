@@ -12,7 +12,7 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <g-image alt="Example image" :src="$page.post.thumbnail" width="400" />
 
-    <h1>{{ $page.post.title }}</h1>
+    <h1>{{ $page.post.heroTitle }}</h1>
 
     <p>
       Test dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
@@ -34,19 +34,31 @@ query post {
         heroImage
         heroTitle
         heroSubtitle
-        outMissionTitle
+        ourMissionTitle
         ourMissionOverview
         ourWorkTitle
         ourWorkOverview
         theNeedTitle
         theNeedSubtitle
-        theNeedContent
-        testimonialSlider
+        theNeedContent { 
+         theNeedRow { 
+           image
+           text1
+           orangeStats
+           text2 
+           }
+        }
         donateTitle
         donateSubtitle
         donateText
-        donatePrimaryButton
-        donateSecondaryButton
+        donatePrimaryButton {
+          buttonText
+          buttonUrl
+        }
+        donateSecondaryButton {
+          buttonText
+          buttonUrl
+        }
         donateImage
         contactUsTitle
         contactUsText
