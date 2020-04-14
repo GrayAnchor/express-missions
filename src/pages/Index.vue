@@ -16,6 +16,9 @@
     <div v-for="row in $page.post.theNeedContent" >
       <p>Row: {{ row.theNeedRow.text1 }}</p>
     </div>
+    <div v-for="testimony in $page.post.testimonialSlider" >
+      <p>Testimonial: {{ testimony.testimonial.quote }}</p>
+    </div>
     <p>
       Test dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
     </p>
