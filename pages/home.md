@@ -17,6 +17,11 @@ theNeedContent:
       orangeStats: 89%
       text1: Text field content
       text2: Text content again
+  - theNeedRow:
+      image: /images/uploads/269346_151839781635782_2048521217_n.jpg
+      orangeStats: 27%
+      text1: More text for the 2nd row
+      text2: another text
 donateTitle: Donate Section Title
 donateSubtitle: Donate Section Subtitle
 donateText: Donate section text donate section text.
