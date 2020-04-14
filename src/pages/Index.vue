@@ -62,6 +62,12 @@ query post {
         donateImage
         contactUsTitle
         contactUsText
+        testimonialSlider {
+          testimonial {
+            quote
+            attribution
+          }
+        }
     }
   }
 </page-query>
