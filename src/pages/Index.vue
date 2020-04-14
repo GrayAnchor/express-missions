@@ -13,7 +13,9 @@
     <g-image alt="Example image" :src="$page.post.thumbnail" width="400" />
 
     <h1>{{ $page.post.heroTitle }}</h1>
-
+    <div v-for="row in $page.post.theNeedContent" >
+      <p>Row: {{ row.text1 }}</p>
+    </div>
     <p>
       Test dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
     </p>
