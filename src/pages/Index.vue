@@ -1,16 +1,20 @@
 <template>
   <Layout>
     <!-- Hero -->
-    <section class="px-4">
-      <div class="max-w-large mx-auto">
-        <div class="max-w-medium">
-          <h1>We want these girls to be free...<span>and to live the life they were created for.</span></h1>
-        </div>
+    <section class="py-4">
+      <div class="max-w-large mx-auto flex justify-between items-center lg:px-4 px-2 relative">
+          <div class="sm:w-43 w-full text-right px-2 leading-none" >
+              <h1 class="font-display text-43 mb-4">{{ $page.post.heroTitle }}<span class="block text-24 font-body font-normal pt-1 leading-tight">{{ $page.post.heroSubtitle }}</span></h1>
+              <a href="#" class='text-20 text-white bg-red px-4 py-1 inline-block'>Get Involved</a>
+          </div>
+
+          <div class="w-76 md:-mr-16">
+             <g-image alt="Hero Image" :src="$page.post.heroImage" width="760" />
+          </div>
       </div>
 
     </section>
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" :src="$page.post.thumbnail" width="400" />
 
     <h1>{{ $page.post.heroTitle }}</h1>
     <div v-for="row in $page.post.theNeedContent" >
@@ -81,7 +85,7 @@ query post {
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Express Missions International | EMI'
   }
 }
 </script>

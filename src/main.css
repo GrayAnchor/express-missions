@@ -1,0 +1,15 @@
+@tailwind base;
+
+html {
+    font-size: 10px;
+    @apply overflow-hidden;
+}
+
+@tailwind components;
+
+body {
+   @apply font-body antialiased text-darkGrey;
+}
+  
+
+@tailwind utilities;

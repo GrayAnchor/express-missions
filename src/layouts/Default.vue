@@ -1,8 +1,14 @@
 <template>
-  <div class="w-full">
-    <header class="header bg-green-100 w-full px-4">
-      <nav class="block w-full h-32 flex items-center mx-auto max-w-large">
-          <a class="block h-12" href="/"><img class="h-full block object-contain" src="/images/logo.png"></a>
+  <div>
+    <header class="sm:px-0 px-2 py-1 border-b border-grey-200"> 
+      <nav class="block w-full flex items-center mx-auto max-w-large mx-auto justify-between">
+          <a class="inline-block w-14 h-6" href="/"><img class="w-full h-full object-contain" src="/images/logo.png"></a>
+          <div class="ml-auto max-w-nav w-full flex items-center justify-between font-display uppercase text-20 tracking-wider" >
+              <a href="#the-need" class="hover:opacity-75 duration-200 transition-opacity" >The Need</a>
+              <a href="#the-need" class="hover:opacity-75 duration-200 transition-opacity" >Our Work</a>
+              <a href="#the-need" class="hover:opacity-75 duration-200 transition-opacity" >Contact</a>
+              <a href="#the-need" class="text-red hover:opacity-75 duration-200 transition-opacity" >Give</a>
+          </div>
       </nav>
     </header>
     <slot/>
@@ -21,24 +27,5 @@ query {
 </static-query>
 
 <style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
 
-
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
 </style>
