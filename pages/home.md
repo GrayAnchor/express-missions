@@ -5,6 +5,8 @@ date: 2019-10-01T00:56:34.007Z
 heroImage: /images/uploads/269346_151839781635782_2048521217_n.jpg
 heroTitle: We want these girls to be free
 heroSubtitle: and to live the lives they were created for.
+heroLinkUrl: https://google.com
+heroLinkText: Get Involved
 ourMissionTitle: Our Mission Title
 ourMissionOverview: Our mission overview our mission overview. Our mission overview.
 ourWorkTitle: Our Work Title
