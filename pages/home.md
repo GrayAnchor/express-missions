@@ -2,7 +2,7 @@
 id: Home
 title: Home
 date: 2019-10-01T00:56:34.007Z
-heroImage: /images/uploads/nathan-dumlao-0ibrn0fk4ng-unsplash.jpg
+heroImage: /images/uploads/free-hero.jpg
 heroTitle: We want these girls to be free
 heroSubtitle: and to live the lives they were created for.
 heroLinkUrl: https://google.com
