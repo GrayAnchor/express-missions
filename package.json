@@ -10,16 +10,17 @@
     "@gridsome/cli": "^0.3.4",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.3.4",
+    "autoprefixer": "^9.8.6",
     "gridsome": "^0.7.23",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "netlify-cms": "^2.10.83",
+    "postcss": "^7.0.35",
     "postcss-nested": "^4.2.3",
-    "tailwindcss": "^1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "typeface-dm-serif-display": "^1.1.13",
     "typeface-fjalla-one": "^1.1.13"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.0",
-    "postcss": "^8"
+    "@fullhuman/postcss-purgecss": "^3.0.0"
   }
 }
