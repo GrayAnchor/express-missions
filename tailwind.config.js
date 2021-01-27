@@ -46,7 +46,8 @@ module.exports = {
         '100': '100rem',
         '102': '102rem',
         '104': '104rem',
-        'large': '123rem'      },
+        'large': '123rem',
+        'screen50': '50vw'      },
       fontSize: {
         '20': '2rem',
         '24': '2.4rem',

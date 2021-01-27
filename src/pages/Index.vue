@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <!-- Hero -->
-    <section class="py-4 h-68 overflow-hidden relative z-0">
+    <section class="h-68 overflow-hidden relative z-0">
       <div class="max-w-large mx-auto flex justify-between h-full items-center lg:px-4 px-2">
 
            <div class="absolute w-full h-full top-0 left-0 z-0 bg-blue">
@@ -18,7 +18,20 @@
       </div>
 
     </section>
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
+    
+
+    <section class="py-8 lg:px-0 px-2 relative" >
+        <div class="max-w-large mx-auto flex justify-between items-center" >
+            <div class="lg:w-screen50 absolute left-0 top-6 bg-blue h-32" >
+                <g-image alt="" class="w-full" />
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+    </section>
+
 
     <h1>{{ $page.post.heroTitle }}</h1>
     <div v-for="row in $page.post.theNeedContent" >
