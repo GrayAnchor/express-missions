@@ -19,6 +19,8 @@ collections:
       - {label: "Hero Image", name: "heroImage", widget: "image"}
       - {label: "Hero Title", name: "heroTitle", widget: "string"}
       - {label: "Hero Subtitle", name: "heroSubtitle", widget: "string"}
+      - {label: "Hero Link Url", name: "heroLinkUrl", widget: "string"}
+      - {label: "Hero Link Text", name: "heroLinkText", widget: "string"}
       - {label: "Our Mission Title", name: "ourMissionTitle", widget: "string"}
       - {label: "Our Mission Overview", name: "ourMissionOverview", widget: "text"}
       - {label: "Our Work Title", name: "ourWorkTitle", widget: "string"}
