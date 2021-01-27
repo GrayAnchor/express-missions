@@ -1,16 +1,20 @@
 <template>
   <Layout>
     <!-- Hero -->
-    <section class="py-4">
-      <div class="max-w-large mx-auto flex justify-between items-center lg:px-4 px-2 relative">
-          <div class="sm:w-43 w-full text-right px-2 leading-none" >
-              <h1 class="font-display text-43 mb-4">{{ $page.post.heroTitle }}<span class="block text-24 font-body font-normal pt-1 leading-tight">{{ $page.post.heroSubtitle }}</span></h1>
-              <a href="#" class='text-20 text-white bg-red px-4 py-1 inline-block'>Get Involved</a>
+    <section class="py-4 h-68 overflow-hidden relative z-0">
+      <div class="max-w-large mx-auto flex justify-between h-full items-center lg:px-4 px-2">
+
+           <div class="absolute w-full h-full top-0 left-0 z-0 bg-blue">
+             <g-image alt="Hero Image" class="w-full h-full object-cover object-bottom" :src="$page.post.heroImage" position="bottom" />
+             <span class="absolute top-0 left-0 w-full h-full bg-blue opacity-50" ></span>
           </div>
 
-          <div class="w-76 md:-mr-16">
-             <g-image alt="Hero Image" :src="$page.post.heroImage" width="760" />
+          <div class="sm:w-78 mx-auto px-1 w-full text-center leading-none relative" >
+              <h1 class="font-display text-regular tracking-wide text-43 text-white mb-4">{{ $page.post.heroTitle }} {{ $page.post.heroSubtitle }} </h1>
+              <a href="#" class='text-24 uppercase text-red bg-white bg-opacity-75 hover:bg-opacity-100 transition-all duration-200 px-1 pt-2px pb-0 leading-none tracking-wide inline-block'>Learn How You Can Help ></a>
           </div>
+
+         
       </div>
 
     </section>

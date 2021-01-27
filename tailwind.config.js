@@ -63,7 +63,7 @@ module.exports = {
         'form': '50rem',
         'quote': '56.625rem',
         's-m-large': '71rem',
-        'nav': '75rem',
+        'nav': '30rem',
         'service-large': '82.875rem',
         'm-large': '87.5rem',
         'large':'120rem'
@@ -71,7 +71,8 @@ module.exports = {
       colors: {
         red: '#cf000a',
         beige: '#E5E5E5',
-        darkGrey: '#323232'
+        darkGrey: '#323232',
+        blue: '#4A828F'
       }
     }
   },
