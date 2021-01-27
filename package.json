@@ -7,11 +7,13 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "@gridsome/cli": "^0.3.4",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.3.4",
     "gridsome": "^0.7.23",
     "gridsome-plugin-netlify-cms": "^1.0.9",
     "netlify-cms": "^2.10.83",
+    "postcss": "^8",
     "postcss-nested": "^4.2.3",
     "tailwindcss": "^1",
     "typeface-dm-serif-display": "^1.1.13",
