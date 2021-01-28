@@ -11,7 +11,7 @@
 
           <div class="sm:w-78 mx-auto px-1 w-full text-center leading-none relative" >
               <h1 class="font-display text-regular tracking-wide text-43 text-white mb-4">{{ $page.post.heroTitle }} {{ $page.post.heroSubtitle }} </h1>
-              <a href="#" class='text-24 uppercase text-red bg-white bg-opacity-75 hover:bg-opacity-100 transition-all duration-200 px-1 pt-2px pb-0 leading-none tracking-wide inline-block'>Learn How You Can Help ></a>
+              <a :href="$page.post.heroLinkUrl" class='text-24 uppercase text-red bg-white bg-opacity-75 hover:bg-opacity-100 transition-all duration-200 px-1 pt-2px pb-0 leading-none tracking-wide inline-block'>{{ $page.post.heroLinkText }} ></a>
           </div>
 
          
@@ -57,9 +57,11 @@ query post {
   post(id:"Home") {
         id
         title
-        heroImage
+        heroImage (width: 1920, quality: 75)
         heroTitle
         heroSubtitle
+        heroLinkText
+        heroLinkUrl
         ourMissionTitle
         ourMissionOverview
         ourWorkTitle
