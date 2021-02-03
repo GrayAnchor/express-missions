@@ -6,9 +6,12 @@ heroImage: /images/uploads/free-hero.jpg
 heroTitle: We want these girls to be free
 heroSubtitle: and to live the lives they were created for.
 heroLinkUrl: https://google.com
-heroLinkText: Get Involved
-ourMissionTitle: Our Mission Title
-ourMissionOverview: Our mission overview our mission overview. Our mission overview.
+heroLinkText: Learn How You Can Help
+ourMissionTitle: Long term help.
+ourMissionOverview: Express Missions International NOW exists for the sole
+  purpose of helping to rehabilitate young exploited ladies and girls from the
+  effects of human trafficking or forced marriages.
+ourMissionImage: /images/uploads/jake-kemman-yvctyfbivje-unsplash.jpg
 ourWorkTitle: Our Work Title
 ourWorkOverview: Our work overview, our work overview our work overview. Our work overview.
 theNeedTitle: The Need Section Title
