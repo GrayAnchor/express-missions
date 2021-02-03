@@ -23,6 +23,7 @@ collections:
       - {label: "Hero Link Text", name: "heroLinkText", widget: "string"}
       - {label: "Our Mission Title", name: "ourMissionTitle", widget: "string"}
       - {label: "Our Mission Overview", name: "ourMissionOverview", widget: "text"}
+      - {label: "Our Mission Image", name: "ourMissionImage", widget: "image"}
       - {label: "Our Work Title", name: "ourWorkTitle", widget: "string"}
       - {label: "Our Work Overview", name: "ourWorkOverview", widget: "text"}
       - {label: "The Need Section Title", name: "theNeedTitle", widget: "string"}

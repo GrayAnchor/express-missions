@@ -57,7 +57,7 @@ query post {
   post(id:"Home") {
         id
         title
-        heroImage (width: 1920, quality: 75)
+        heroImage(width: 1920, quality: 75)
         heroTitle
         heroSubtitle
         heroLinkText
