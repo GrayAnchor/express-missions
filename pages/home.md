@@ -12,6 +12,8 @@ ourMissionOverview: Express Missions International NOW exists for the sole
   purpose of helping to rehabilitate young exploited ladies and girls from the
   effects of human trafficking or forced marriages.
 ourMissionImage: /images/uploads/jake-kemman-yvctyfbivje-unsplash.jpg
+featureTitle: The need is real.
+featureImage: /images/uploads/loren-joseph-xobwuba3amg-unsplash.jpg
 ourWorkTitle: Our Work Title
 ourWorkOverview: Our work overview, our work overview our work overview. Our work overview.
 theNeedTitle: The Need Section Title
