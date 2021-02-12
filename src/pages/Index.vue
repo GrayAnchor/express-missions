@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <!-- Hero -->
-    <section class="h-68 overflow-hidden relative z-0">
+    <section class="h-68 overflow-hidden relative z-0 mb-8">
       <div class="max-w-large mx-auto flex justify-between h-full items-center lg:px-4 px-2">
 
            <div class="absolute w-full h-full top-0 left-0 z-0 bg-blue">
@@ -11,7 +11,7 @@
 
           <div class="sm:w-78 mx-auto px-1 w-full text-center leading-none relative" >
               <h1 class="font-display text-regular tracking-wide text-43 text-white mb-4">{{ $page.post.heroTitle }} {{ $page.post.heroSubtitle }} </h1>
-              <a :href="$page.post.heroLinkUrl" class='text-24 uppercase text-red bg-white bg-opacity-75 hover:bg-opacity-100 transition-all duration-200 px-1 pt-2px pb-0 leading-none tracking-wide inline-block'>{{ $page.post.heroLinkText }} ></a>
+              <a :href="$page.post.heroLinkUrl" class='text-24 uppercase font-display-sans text-red bg-white bg-opacity-75 hover:bg-opacity-100 transition-all duration-200 px-1 pt-2px pb-0 leading-none tracking-wide inline-block'>{{ $page.post.heroLinkText }} ></a>
           </div>
 
          
@@ -19,19 +19,35 @@
 
     </section>
     
-
+  <!-- Overview Section -->
     <section class="py-8 lg:px-0 px-2 relative" >
-        <div class="max-w-large mx-auto flex justify-between items-center" >
-            <div class="lg:w-screen50 absolute left-0 top-6 bg-blue h-32" >
-                <g-image alt="" class="w-full" />
+        <div class="w-full mx-auto flex lg:flex-row flex-col justify-between items-center" >
+            <div class="xl:w-auto lg:w-screen50 w-56 lg:px-0 px-4 lg:relative lg:absolute xl:static left-0 top-0 lg:mb-0 mb-4" >
+              <div class="xl:w-76 w-full bg-blue" >
+                <g-image alt="Our Mission Image" class="w-full object-cover object-bottom" :src="$page.post.ourMissionImage" position="bottom" />
+              </div>
             </div>
-
-            <div>
-
+            
+            <div class="lg:w-screen50 flex items-center justify-start" >
+              <div class="md:w-48 text-left lg:ml-6" >
+                <h2 class="font-display text-43 mb-1" >{{ $page.post.ourMissionTitle }}</h2>
+                <p class="text-16 font-semibold leading-loose pr-2 mb-2_5" >{{ $page.post.ourMissionOverview }}</p>
+                <a :href="$page.post.heroLinkUrl" class='text-24 uppercase text-red font-display-sans bg-white bg-opacity-75 hover:bg-opacity-100 transition-all duration-200 pt-2px pb-0 leading-none tracking-wide inline-block'>{{ $page.post.heroLinkText }} ></a>
+              </div>
             </div>
+            
         </div>
     </section>
 
+  <!-- Full Width Image Section -->
+  <section>
+    <div class="w-full h-screen">
+        <div class="w-full bg-yellow" >
+          <g-image alt="Our Mission Image" class="w-full h-full object-cover object-center" :src="$page.post.ourMissionImage" position="bottom" />
+        </div>
+    </div>
+  
+  </section>
 
     <h1>{{ $page.post.heroTitle }}</h1>
     <div v-for="row in $page.post.theNeedContent" >
@@ -64,6 +80,7 @@ query post {
         heroLinkUrl
         ourMissionTitle
         ourMissionOverview
+        ourMissionImage
         ourWorkTitle
         ourWorkOverview
         theNeedTitle
@@ -110,7 +127,5 @@ export default {
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
-}
+
 </style>

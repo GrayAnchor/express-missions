@@ -7,6 +7,7 @@ module.exports = {
         '0': '0',
         '1': '1rem',
         '2': '2rem',
+        '2_5': '2.5rem',
         '3': '3.75rem',
         '4': '4rem',
         '5': '5rem',
@@ -49,13 +50,15 @@ module.exports = {
         'large': '123rem',
         'screen50': '50vw'      },
       fontSize: {
+        '16': '1.6rem',
         '20': '2rem',
         '24': '2.4rem',
         '43': '4.3rem'
       },
       fontFamily: {
         'display': ['"DM Serif Display"','serif'],
-        'body': ['"Fjalla One"','sans-serif']
+        'display-sans': ['"Fjalla One"','sans-serif'],
+        'body': ['"Hind Vadodara"','sans-serif']
       },
       maxWidth: {
         'smaller': '30rem',

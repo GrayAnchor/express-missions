@@ -7,6 +7,7 @@ require('~/main.css')
 // Import fonts
 require('typeface-fjalla-one')
 require('typeface-dm-serif-display')
+require('typeface-hind-vadodara')
 
 import DefaultLayout from '~/layouts/Default.vue'
 
