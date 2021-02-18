@@ -21,14 +21,23 @@ theNeedSubtitle: The Need Section Subtitle
 theNeedContent:
   - theNeedRow:
       image: /images/uploads/269346_151839781635782_2048521217_n.jpg
-      orangeStats: 89%
-      text1: Text field content
-      text2: Text content again
+      orangeStats: 27,000,000
+      text1: Nearly
+      text2: young ladies or underage girls face the traumatic nightmarish world of
+        human trafficking or forced marriages.
   - theNeedRow:
       image: /images/uploads/jake-kemman-yvctyfbivje-unsplash.jpg
-      orangeStats: 27%
-      text1: More text for the 2nd row
-      text2: another text
+      orangeStats: " "
+      text1: These girls are scarred for life physically, emotionally, socially, and
+        even spiritually. Many contract diseases, forced drug addiction, and
+        even death.
+      text2: " "
+  - theNeedRow:
+      image: /images/uploads/adobestock_52188134.jpeg
+      text1: Currently there are
+      orangeStats: 12,000,000
+      text2: cases of very young girls being forced to marry much older men - with no
+        way out!
 donateTitle: Donate Section Title
 donateSubtitle: Donate Section Subtitle
 donateText: Donate section text donate section text.
