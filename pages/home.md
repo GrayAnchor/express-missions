@@ -25,7 +25,7 @@ theNeedContent:
       text1: Text field content
       text2: Text content again
   - theNeedRow:
-      image: /images/uploads/269346_151839781635782_2048521217_n.jpg
+      image: /images/uploads/jake-kemman-yvctyfbivje-unsplash.jpg
       orangeStats: 27%
       text1: More text for the 2nd row
       text2: another text
