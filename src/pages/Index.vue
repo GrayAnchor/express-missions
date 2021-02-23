@@ -22,7 +22,7 @@
   <!-- Overview Section -->
     <section class="py-8 lg:px-0 px-2 relative" >
         <div class="w-full mx-auto flex lg:flex-row flex-col justify-between items-center" >
-            <div class="xl:w-auto lg:w-screen50 w-56 lg:px-0 px-4 lg:relative lg:absolute xl:static left-0 top-0 lg:mb-0 mb-4" >
+            <div class="xl:w-auto lg:w-screen50 sm:w-56 w-full lg:px-0 sm:px-4 lg:relative lg:absolute xl:static left-0 top-0 lg:mb-0 mb-4" >
               <div class="xl:w-76 w-full bg-blue" >
                 <g-image alt="Our Mission Image" class="w-full object-cover object-bottom" :src="$page.post.ourMissionImage" position="bottom" />
               </div>
@@ -42,14 +42,50 @@
   <!-- Full Width Image Section -->
   <section>
     <div class="w-full h-screen">
-        <div class="w-full bg-yellow" >
-          <g-image alt="Our Mission Image" class="w-full h-full object-cover object-center" :src="$page.post.ourMissionImage" position="bottom" />
+        <div class="w-full h-full bg-yellow relative flex items-center justify-center" >
+          <g-image alt="Our Mission Image" class="w-full h-full object-cover object-center opacity-50 absolute top-0 left-0" :src="$page.post.featureImage" position="bottom" />
+          <div class="relative" >
+              <h2 class="font-display text-white text-64 text-center leading-none" >{{ $page.post.featureTitle }}</h2>
+          </div>
         </div>
     </div>
   
   </section>
 
-    <h1>{{ $page.post.heroTitle }}</h1>
+<!-- Stats -->
+   <section class="tracking-widest mb-12"  >
+    <div class="w-full h-screen" v-for="row in $page.post.theNeedContent">
+        <div class="w-full h-full bg-blue relative flex items-center justify-center" >
+          <g-image alt="Our Mission Image" class="w-full h-full object-cover object-center opacity-25 absolute top-0 left-0" :src="row.theNeedRow.image" position="bottom" />
+          <div class="relative max-w-stat" >
+              <h2 class="font-body text-white text-36 text-center leading-tight" >
+                <span class="font-bold block mb-1_5">{{ row.theNeedRow.text1 }}</span>
+                <span class="font-display-sans font-regular text-64 text-orange block" >{{ row.theNeedRow.orangeStats }}</span>
+                <span class="font-bold block">{{ row.theNeedRow.text2 }}</span>
+              </h2>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="mb-12" >
+    <div class="max-w-cta mx-auto shadow-large tracking-widest py-6">
+      <div class="max-w-stat mx-auto text-center" >
+        <h2 class="font-display text-43 mb-1_5 px-7 leading-none" >{{ $page.post.donateTitle }}</h2>
+        <h3 class="uppercase text-20 font-display-sans mb-1_5" >{{ $page.post.donateSubtitle }}</h3>
+        <p class="text-16 font-semibold mb-4" >{{ $page.post.donateText }}</p>
+        <div class="flex justify-center leading-none w-full" >
+          <a :href="$page.post.donatePrimaryButton.buttonUrl" class="px-4 py-1 bg-red border-red border-4 uppercase font-display-sans text-24 text-white btn ">{{ $page.post.donatePrimaryButton.buttonText }}</a>
+          <a :href="$page.post.donateSecondaryButton.buttonUrl" class="px-4 py-1 bg-white border-red border-4 uppercase font-display-sans text-24 text-red secondary ml-2">{{ $page.post.donateSecondaryButton.buttonText }}</a>
+        </div>
+      </div>
+        
+
+    </div>
+  </section>
+
+    <!-- <h1>{{ $page.post.heroTitle }}</h1>
     <div v-for="row in $page.post.theNeedContent" >
       <p>Row: {{ row.theNeedRow.text1 }}</p>
     </div>
@@ -63,7 +99,7 @@
     <p class="home-links">
       <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+    </p> -->
 
   </Layout>
 </template>
@@ -83,6 +119,8 @@ query post {
         ourMissionImage
         ourWorkTitle
         ourWorkOverview
+        featureTitle
+        featureImage
         theNeedTitle
         theNeedSubtitle
         theNeedContent { 

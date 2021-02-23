@@ -3,21 +3,25 @@ module.exports = {
     extend: {
       spacing: {
         px: '1px',
-        '2px': '2px', 
+        '2px': '2px',
+        '5px': '5px', 
         '0': '0',
         '1': '1rem',
+        '1_5': '1.5rem',
         '2': '2rem',
         '2_5': '2.5rem',
         '3': '3.75rem',
         '4': '4rem',
         '5': '5rem',
         '6': '6rem',
+        '7': '7rem',
         '8': '8rem',
         '10': '10rem',
         '12': '12rem',
         '14': '14rem',
         '16': '16rem',
         '20': '20rem',
+        '22': '22rem',
         '24': '24rem',
         '28': '28rem',
         '32': '32rem',
@@ -50,10 +54,13 @@ module.exports = {
         'large': '123rem',
         'screen50': '50vw'      },
       fontSize: {
+        '14': '1.4rem',
         '16': '1.6rem',
         '20': '2rem',
         '24': '2.4rem',
-        '43': '4.3rem'
+        '36': '3.6rem',
+        '43': '4.3rem',
+        '64': '6.4rem'
       },
       fontFamily: {
         'display': ['"DM Serif Display"','serif'],
@@ -66,17 +73,23 @@ module.exports = {
         'medium': '42rem',
         'form': '50rem',
         'quote': '56.625rem',
+        'stat': '58rem',
         's-m-large': '71rem',
         'nav': '30rem',
         'service-large': '82.875rem',
-        'm-large': '87.5rem',
+        'cta': '75rem',
         'large':'120rem'
       },
       colors: {
         red: '#cf000a',
+        orange: '#FA520D',
         beige: '#E5E5E5',
         darkGrey: '#323232',
-        blue: '#4A828F'
+        blue: '#4A828F',
+        yellow: '#E1DD83'
+      },
+      boxShadow: {
+        large: '0 30px 35px 0 rgba(0, 0, 0, 0.1), 0 20px 20px 0 rgba(0, 0, 0, 0.04)'
       }
     }
   },

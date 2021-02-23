@@ -11,8 +11,13 @@
       </nav>
     </header>
     <slot/>
-    <footer class="w-full bg-blue-100 h-32">
-      This is the footer
+    <footer class="py-2">
+      <div class="max-w-large mx-auto justify-between items-center flex mb-4" >
+          <a class="inline-block w-22" href="/"><img class="w-full h-full object-contain" src="/images/logo.png"></a>
+          <div><span class="h-5 w-5 bg-red rounded-full inline-block" >A</span><span class="h-5 w-5 bg-red rounded-full inline-block ml-2">B</span><span class="h-5 w-5 bg-red rounded-full inline-block ml-2">C</span></div>
+          <a href="#" class="inline-block w-22 h-4 bg-red"></a>
+      </div>
+      <div class="text-center font-semibold text-14 tracking-widest" >&copy; 2021 Express Missions International</div>
     </footer>
   </div>
 </template>
