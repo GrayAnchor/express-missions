@@ -13,6 +13,7 @@
     "autoprefixer": "^9.8.6",
     "gridsome": "^0.7.23",
     "gridsome-plugin-netlify-cms": "^1.0.9",
+    "gsap": "^3.6.1",
     "netlify-cms": "^2.10.83",
     "postcss": "^7.0.35",
     "postcss-nested": "^4.2.3",

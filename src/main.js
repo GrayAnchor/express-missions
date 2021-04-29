@@ -9,6 +9,11 @@ require('typeface-fjalla-one')
 require('typeface-dm-serif-display')
 require('typeface-hind-vadodara')
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger.js";
+
+gsap.registerPlugin(ScrollTrigger);
+
 import DefaultLayout from '~/layouts/Default.vue'
 
 export default function (Vue, { router, head, isClient }) {
@@ -19,6 +24,7 @@ export default function (Vue, { router, head, isClient }) {
    head.script.push({
     src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
   })
+
 
 
 }

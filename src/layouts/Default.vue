@@ -1,8 +1,8 @@
 <template>
   <div class="relative" >
-    <header :class="[bgTransparent ? 'bg-opacity-0' : 'bg-opacity-1']"  class="transition-bg-opacity duration-100 bg-beige px-2 py-1 fixed top-0 left-0 w-full z-50"> 
+    <header  class="transition-bg duration-100 px-2 py-1 fixed top-0 left-0 w-full z-50"> 
       <nav class="block w-full flex items-center mx-auto max-w-large mx-auto justify-between">
-          <a class="inline-block sm:w-14 w-6 h-6" href="/"><img class="w-full h-full sm:block hidden object-contain" src="/images/logo.png"><img class="w-full h-full sm:hidden object-contain" src="/images/logo-small.png"></a>
+          <a class="inline-block sm:w-14 w-6 h-6 logo-link transition-h duration-200" href="/"><img class="w-full h-full sm:block hidden object-contain" src="/images/logo.png"><img class="w-full h-full sm:hidden object-contain" src="/images/logo-small.png"></a>
           <div class="ml-auto max-w-nav w-full flex items-center justify-between font-display-sans uppercase sm:text-20 text-16 sm:pl-0 pl-4 tracking-wider" >
               <a @click="bgTransparent = !bgTransparent" href="#the-need" class="hover:opacity-75 duration-200 transition-opacity" >About Us</a>
               <a href="#the-need" class="hover:opacity-75 duration-200 transition-opacity" >Contact</a>
@@ -77,6 +77,10 @@ query {
 </static-query>
 
 <script>
+
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger.js";
+
 export default {
   data () {
     return {
@@ -88,7 +92,17 @@ export default {
     onClick () {
       this.message = 'Here you go :)'
     }
-  }
+  },
+  mounted: function () {
+  this.$nextTick(function () {
+    ScrollTrigger.create({
+    start: 'top -80',
+    end: 99999,
+    toggleClass: {className: 'bg-beige', targets: 'header'},
+    toggleClass: {className: 'sm:h-4', targets: '.logo-link'}
+  });
+  })
+}
 }
 </script>
 
