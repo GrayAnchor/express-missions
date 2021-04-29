@@ -52,7 +52,12 @@ module.exports = {
         '102': '102rem',
         '104': '104rem',
         'large': '123rem',
-        'screen50': '50vw'      },
+        'screen50': '50vw',
+        'screen-h90':'90vh'
+            },
+      screens: {
+        'xs':'359px'
+      },
       fontSize: {
         '14': '1.4rem',
         '16': '1.6rem',
