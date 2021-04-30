@@ -1,8 +1,8 @@
 <template>
   <div class="relative" >
-    <header  class="transition-bg duration-100 px-2 py-1 fixed top-0 left-0 w-full z-50"> 
+    <header  id="header" class="transition-bg duration-100 px-2 py-1 fixed top-0 left-0 w-full z-50"> 
       <nav class="block w-full flex items-center mx-auto max-w-large mx-auto justify-between">
-          <a class="inline-block sm:w-14 w-6 h-6 logo-link transition-h duration-200" href="/"><img class="w-full h-full sm:block hidden object-contain" src="/images/logo.png"><img class="w-full h-full sm:hidden object-contain" src="/images/logo-small.png"></a>
+          <a id="logo-link" class="inline-block sm:w-14 w-6 h-6 transition-h duration-200" href="/"><img class="w-full h-full sm:block hidden object-contain" src="/images/logo.png"><img class="w-full h-full sm:hidden object-contain" src="/images/logo-small.png"></a>
           <div class="ml-auto max-w-nav w-full flex items-center justify-between font-display-sans uppercase sm:text-20 text-16 sm:pl-0 pl-4 tracking-wider" >
               <a @click="bgTransparent = !bgTransparent" href="#the-need" class="hover:opacity-75 duration-200 transition-opacity" >About Us</a>
               <a href="#the-need" class="hover:opacity-75 duration-200 transition-opacity" >Contact</a>
@@ -98,8 +98,12 @@ export default {
     ScrollTrigger.create({
     start: 'top -80',
     end: 99999,
-    toggleClass: {className: 'bg-beige', targets: 'header'},
-    toggleClass: {className: 'sm:h-4', targets: '.logo-link'}
+    onToggle: () => {
+      let header = document.getElementById("header");
+      let logo = document.getElementById("logo-link");
+      logo.classList.toggle("sm:h-4");
+      header.classList.toggle("bg-beige");
+    }
   });
   })
 }
