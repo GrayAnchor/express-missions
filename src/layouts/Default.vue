@@ -102,7 +102,9 @@ export default {
       let header = document.getElementById("header");
       let logo = document.getElementById("logo-link");
       logo.classList.toggle("sm:h-4");
-      header.classList.toggle("bg-beige");
+      header.classList.toggle("bg-white");
+      header.classList.toggle("shadow-md");
+
     }
   });
   })
