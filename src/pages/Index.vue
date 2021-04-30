@@ -76,8 +76,8 @@
         <h3 class="uppercase text-20 font-display-sans mb-1_5 px-1" >{{ $page.post.donateSubtitle }}</h3>
         <p class="text-16 font-semibold mb-4 px-1" >{{ $page.post.donateText }}</p>
         <div class="flex sm:flex-row flex-col justify-center leading-none sm:px-0 px-2 w-full" >
-          <a :href="$page.post.donateSecondaryButton.buttonUrl" class="px-4 py-1 sm:mb-0 mb-2 border-white border-4 uppercase font-display-sans text-24 text-white secondary">{{ $page.post.donateSecondaryButton.buttonText }}</a>
-          <a :href="$page.post.donatePrimaryButton.buttonUrl" class="px-4 py-1  bg-white border-white border-4 uppercase font-display-sans text-24 text-blue btn sm:ml-2">{{ $page.post.donatePrimaryButton.buttonText }}</a>
+          <a :href="$page.post.donateSecondaryButton.buttonUrl" class="px-4 py-1 sm:mb-0 mb-2 border-white border-4 uppercase font-display-sans text-24 text-white secondary hover:border-red hover:text-red hover:bg-white transition-all duration-200">{{ $page.post.donateSecondaryButton.buttonText }}</a>
+          <a :href="$page.post.donatePrimaryButton.buttonUrl" class="px-4 py-1  bg-white border-white border-4 uppercase font-display-sans text-24 text-blue btn sm:ml-2 hover:bg-red hover:border-red hover:text-white transition-all duration-200">{{ $page.post.donatePrimaryButton.buttonText }}</a>
         </div>
       </div>
         
