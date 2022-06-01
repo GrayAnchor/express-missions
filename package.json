@@ -17,7 +17,7 @@
     "netlify-cms": "^2.10.83",
     "postcss": "^7.0.35",
     "postcss-nested": "^4.2.3",
-    "sharp": "^0.28.1",
+    "sharp": "^0.30.5",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "typeface-dm-serif-display": "^1.1.13",
     "typeface-fjalla-one": "^1.1.13",
